@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <title>SQL Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="container">
+
+  <header class="header">
+    <div class="prompt">user@portfolio:~/sql$</div>
+    <a href="index.html">← Back</a>
+  </header>
+
+  <section>
+    <h1>Student Management Database</h1>
+    <p>
+      Relational database design for managing students, courses, and enrollments.
+    </p>
+
+    <h2>Tables</h2>
+    <pre><code>
+students(id, name, email)
+courses(id, title)
+enrollments(student_id, course_id)
+    </code></pre>
+
+    <h2>Example JOIN Query</h2>
+    <pre><code>
+SELECT students.name, courses.title
+FROM enrollments
+JOIN students ON enrollments.student_id = students.id
+JOIN courses ON enrollments.course_id = courses.id;
+    </code></pre>
+  </section>
+
+</div>
+</body>
+</html>

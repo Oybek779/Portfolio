@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <title>Python Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="container">
+
+  <header class="header">
+    <div class="prompt">user@portfolio:~/python$</div>
+    <a href="index.html">← Back</a>
+  </header>
+
+  <section>
+    <h1>Python Password Generator</h1>
+    <p>
+      A simple and secure password generator written in Python.
+      Generates strong passwords using letters, numbers, and symbols.
+    </p>
+
+    <h2>Libraries Used</h2>
+    <p>
+      random, string
+    </p>
+
+    <h2>Code Example</h2>
+    <pre><code>
+import random
+import string
+
+def generate_password(length=16):
+    chars = string.ascii_letters + string.digits + "!@#$%^&*()"
+    return ''.join(random.choice(chars) for _ in range(length))
+
+print(generate_password())
+    </code></pre>
+  </section>
+
+</div>
+</body>
+</html>

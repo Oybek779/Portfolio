@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <title>Developer Portfolio</title>
+
+  <!-- JetBrains Mono -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- TERMINAL HEADER -->
+  <header class="header">
+    <div class="prompt">
+      Portfolio About Me
+    </div>
+
+    <!-- LIGHT / DARK TOGGLE -->
+    <div class="theme-toggle">
+      <input type="checkbox" id="themeSwitch" onchange="
+        document.documentElement.setAttribute(
+          'data-theme',
+          this.checked ? 'dark' : 'light'
+        )
+      ">
+      <label for="themeSwitch">🌙 / ☀️</label>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section>
+    <h1><!-- YOUR NAME HERE -->Allayorov Oybek</h1>
+    <p><strong>DevOps & Backend Developer</strong></p>
+    <p>
+      <!-- SHORT DESCRIPTION -->
+      Python · SQL · Web · Linux · Servers · Automation
+    </p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <h2>Projects</h2>
+    <ul class="project-list">
+      <li>
+        <a href="project-python.html">Python Password Generator</a>
+      </li>
+      <li>
+        <a href="project-web.html">Frontend Web Project</a>
+      </li>
+      <li>
+        <a href="project-sql.html">SQL Student Management Database</a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <h2>Contact</h2>
+    <p>Email: oybekallayorov497@gmail.com</p>
+    <p>GitHub: github.com/Oybek779</p>
+    <p>Telegram: @allayorov_O</p>
+  </section>
+
+  <footer>
+    © 2026 — Built with HTML, CSS, and JavaScript
+  </footer>
+
+</div>
+
+</body>
+</html>
